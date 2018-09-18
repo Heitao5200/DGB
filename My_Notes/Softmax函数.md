@@ -37,4 +37,8 @@ Result: 114.98
 Result: [0.024, 0.064, 0.175, 0.475, 0.024, 0.064, 0.175]
 
 
- 
+# Softmax与Sigmoid的异同
+
+![image](../picture/Softmax与Sigmoid的异同.png)
+
+Sigmoid就是极端情况(类别数为2)下的Softmax
