@@ -41,7 +41,7 @@ if status_vali:
 4 对测试集进行预测;将预测结果转换为官方标准格式；并将结果保存至本地
 """
 y_test = clf.predict(x_test) + 1
-df_result = pd.DataFrame(data={'id':range(102277), 'class': y_test.tolist()})
+df_result = pd.DataFrame(data={'id':range(5000), 'class': y_test.tolist()})
 result_path = '../results/' + features_path.split('/')[-1] + '_sklearn_' + clf_name + '.csv'
 df_result.to_csv(result_path, index=False)
 
