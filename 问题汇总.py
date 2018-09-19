@@ -1,2 +1,0 @@
-### 1、lsa和lda的降维是针对已经用tfidf构建的特征来降维的吗？这个先后顺序是必要的吗？
-    ```这个先后顺序是必要的哈，LSA和LDA本来是用来提主题特征的，是基于词袋模型，的，所以要先词袋（bow和tfidf），后提主题（LSA或LDA）。一般机器学习处理NLP问题的时候，都需要先Representation，词袋是NLP里面一种比较常用的Representation方式。```
