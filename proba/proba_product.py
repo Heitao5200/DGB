@@ -92,11 +92,7 @@ df_result = df_test.loc[:,['id','proba']]
 df_result.to_csv('result_proba_nb.csv',index=False)
 
 
-
-
-
-
-print('4 读取概率+投票')
+print('2 读取概率+投票')
 svm_df = pd.read_csv('result_proba_svm.csv')
 lg_df = pd.read_csv('result_proba_lg.csv')
 kn_df = pd.read_csv('result_proba_kn.csv')
@@ -122,5 +118,5 @@ df_test['proba']=df_test['proba']+1
 df_result = df_test.loc[:,['id','proba']]
 
 
-print('5  save predictable data')
+print('3  save predictable data')
 df_result.to_csv('result.csv',index=False)

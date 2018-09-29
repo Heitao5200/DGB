@@ -5,6 +5,7 @@ import xgboost as xgb
 from sklearn.metrics import accuracy_score
 import time
 import pickle
+import pandas as pd
 
 data_path = 'E:/MyPython/机器学习——达观杯/data_set/'
 feature_path = 'E:/MyPython/机器学习——达观杯/feature/feature_file/'
@@ -44,6 +45,6 @@ print('time',end-start)
 
 y_test = gbm.predict(x_test)
 
-df_result = pd.DataFrame(data={'id':range(102277), 'class': y_pred.tolist()})
+df_result = pd.DataFrame(data={'id':range(5000), 'class': y_test.tolist()})
 
 df_result.to_csv(result_path +'XGB_data_w_tfidf.csv', index=False)
