@@ -127,8 +127,8 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 model.fit([X_train_padded_seqs, left_train_padded_seqs, right_train_padded_seqs],y_train,
-           batch_size=1024,
-           epochs=12,
+           batch_size=32,
+           epochs=1,
            validation_data=([X_test_padded_seqs, left_test_padded_seqs, right_test_padded_seqs], y_test))
 
 model.save(model_path + 'textcnn.h5')
